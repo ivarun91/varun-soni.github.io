@@ -13,9 +13,16 @@ body{
     font-style: italic;
     color: rgba(0,0,0,1);
 }
-.main ul li{
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container ul li{
     list-style-type: none;
     display: inline-block;
+    margin-right: 20px;
 }
 
 .main div{
