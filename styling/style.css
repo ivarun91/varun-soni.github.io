@@ -1,5 +1,7 @@
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Serif Pro', serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .main{
@@ -9,14 +11,20 @@ body{
 }
 
 .logo{
-    font-size: 22px;
+    font-size: 26px;
     font-style: italic;
+    font-weight: 600;
     color: rgba(0,0,0,1);
 }
 
 .container{
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0px;
+    background-color: rgba(255,255,255,1);
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    /* box-shadow: 0px 3px 25px -4px rgb(0 0 0 / 25%); */
 }
 
 .container ul li{
@@ -27,4 +35,28 @@ body{
 
 .main div{
     display: inline-block;
+}
+
+h1 span{
+    background: linear-gradient(-45deg, #6355a4, #6355a4, #e89a3e, #e89a3e);
+    background-size: 400%;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-weight: 700;
+    font-size: 45px;
+    /* letter-spacing: -5px; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated_text 10s ease-in-out infinite;
+    -moz-animation: animated_text 10s ease-in-out infinite;
+    -webkit-animation: animated_text 10s ease-in-out infinite;
+}
+
+@keyframes animated_text {
+	0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
+}
+
+.hero-text{
+    margin-top: 12rem;
 }
