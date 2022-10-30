@@ -8,25 +8,28 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600&display=swap" rel="stylesheet">
     </head>
     <body>
-            <div class="container">
-                <div class="logo">ivarun91</div>
-                    <div>
-                        <ul>
-                            <li>Home</li>
-                            <li>About me</li>
-                            <li>Portfolio</li>
-                        </ul>
-                    </div>
-                        <div>
-                            <a href="#">Contact me</a>
-                        </div>
+            <div class="nav-bar">
+                <div class="logo nav-items">ivarunsoni</div>
+                <ul class="nav-items">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About me</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a class="nav-items" href="#">Contact me</a></li>
+                </ul>
+            </div>
+        <div class="container">
+            <div class="content">
+                <div>
+                    <p id="wish">Good Morning</p>
                 </div>
+                <h1>I'm <span>Varun Soni</span></h1>
+                <p>I’m a Product Designer from New Delhi, India.</p>
+
+                <p>After spending 7 years in Indian IT Industry i came to UK & working here as a Freelancer on multiple platforms.</p>
+                    
+                <p>I’ve been designing products for B2B, B2C, Mobile Apps, Websites, eCommerce Platforms like: Shopify, Magento, Open Cart, Joomla Virtumart, Wordpress Woocommerce & many Stand Alone websites & products which have been a huge success for my previous organisation.</p>
             </div>
-        <div class="main hero-text">
-            <div>Hi there 👋
-                <p>Good Morning</p>
-            </div>
-            <h1>Hi <br> I'm <span>Varun Soni</span></h1>
+            <div class="my-pic"><img src="img/varun.png" alt="varun"></div>
         </div>
     
     <script>
@@ -34,11 +37,11 @@
         var curHr = today.getHours()
 
         if (curHr < 12) {
-            document.write('good morning')
+            document.getElementById("wish").innerHTML = 'Good morning';
         } else if (curHr < 18) {
-            document.write('good afternoon')
+            document.getElementById("wish").innerHTML = 'Good afternoon';
         } else {
-            document.write('good evening')
+            document.getElementById("wish").innerHTML = 'Good evening';
         }
     </script>
     </body>
