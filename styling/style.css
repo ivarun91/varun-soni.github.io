@@ -67,6 +67,49 @@ h1 span{
     line-height: 36px;
 }
 
+h3{
+    font-weight: 600;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,1);
+    margin: 30px 0 10px 0;
+}
+
+.socials{
+    margin-left: -9px;
+}
+
+.socials a{
+    background-image: url("../img/icons-all.png");
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    opacity: .8;
+}
+
+.socials a:hover{
+    opacity: 1;
+}
+
+.social-dribbble{
+    background-position: -60px 0;
+}
+
+.social-behance{
+    background-position: -120px 0;
+}
+
+.social-github{
+    background-position: -180px 0;
+}
+
+.social-medium{
+    background-position: -240px 0;
+}
+
+.social-codepen{
+    background-position: -300px 0;
+}
 @media only screen and (max-width: 700px) {
     .container {
       display: block;
