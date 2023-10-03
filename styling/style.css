@@ -38,6 +38,52 @@ body{
     margin-right: 1rem;
 }
 
+.bn632-hover {
+    padding: 12px 22px 14px 22px;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 4px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn21 {
+    background-image: linear-gradient(
+      to right,
+      #fc6076,
+      #ff9a44,
+      #ef9d43,
+      #e75516
+    );
+    /* box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75); */
+  }
+
+  button img{
+    transform: translateY(4px);
+    margin-right: 5px;
+  }
+
 .nav-bar ul a{
     text-decoration: none;
 }
